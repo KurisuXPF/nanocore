@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*CSS重置*/
+body{margin:0px;}
+img{border:none;}
+*{font-family:"微软雅黑";color:#010101;font-size:14px;}/*初始字体、字大小颜色设置*/
+a{text-decoration:none;}
+/*top*/
+.top{width:1000px;margin:0 auto;overflow:hidden;}
+.top a{float:left;}
+.top img{display:block;float:left;padding:40px 0;margin-left:300px;}
+/*nav*/
+.nav{width:1000px;margin:0 auto;overflow:hidden;padding:50px 0;}
+.nav a{float:left;display:block;width:100px;height:64px;line-height:70px;text-align:center;margin:0 50px;
+background-image:url(nanocore_sucai/cb15x15.png);background-repeat:no-repeat;background-position:center top;border-bottom:solid 2px #00f1f6;font-size:16px;color:#656565;}
+a.currentA{background-image:url(nanocore_sucai/cbf15x15.png);border:none;}
+.nav a:hover{background-image:url(nanocore_sucai/cbf15x15.png);border:none;}
+/*content*/
+.content p{text-align:center;line-height:24px;}
+.content{width:1000px;margin:0 auto;padding-top:50px;}
+.content img{display:block;width:570px;margin:0 auto;}
+img.erweima{width:258px;}
+/*footer*/
+.footer{padding-top:50px;}
+.footer,.footer a{width:1000px;margin:0 auto;font-size:12px;color:#656565;display:block;}
+/*main*/
+/* CSS Document */
+

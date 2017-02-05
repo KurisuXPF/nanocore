@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NC-故事背景</title>
+<script src="jquery.js"></script>
+<script>
+$(function(){
+	$(".container div").hover(function(){
+		$(".container div").removeClass("container div").removeClass("currentimg");
+		$(this).addClass("currentimg");})
+	
+	/*切换*/
+	var n=5;
+	$(".ra").click(function(){if(n>=5){n=0;}else{n++;}
+		$(".container div").removeClass("container div").removeClass("currentimg");
+		$(".container div").eq(n).addClass("currentimg")
+		})
+	
+	$(".la").click(function(){if(n<=0){n=5;}else{n--;}
+		$(".container div").removeClass("container div").removeClass("currentimg");
+		$(".container div").eq(n).addClass("currentimg")
+		})
+})
+</script>
+<link href="style1.css" rel="stylesheet" type="text/css">
+<style>
+body{background-image:url(nanocore_sucai/gsbj/bg1.png);background-position:center top;background-repeat:no-repeat;}
+.containerbox{width:1400px;margin:0 auto;position:relative;}
+.container{width:1200px;margin:0 auto;overflow:hidden;}
+.container div{float:left;overflow:hidden;width:40px;}
+div.currentimg{float:left;overflow:hidden;width:1000px;}
+.la,.ra{width:50px;height:500px;background-repeat:no-repeat;background-position:center center;}
+.la{background-image:url(nanocore_sucai/al6.png);position:absolute;left:0;top:0px;}
+.ra{background-image:url(nanocore_sucai/ar6.png);position:absolute;right:0;top:0px;}
+</style>
+</head>
+<body>
+<!--top-->
+<div class="top">
+	<a><br>nc.xd.com</a>
+    <a><img src="nanocore_sucai/logo.png"></a>
+</div>
+<!--nav-->
+<div class="nav">
+	<a href="nc_homepage.html">首页</a>
+	<a class="currentA" href="nc_gushibeijing.html">故事背景</a>
+	<a href="nc_renwujieshao.html">人物介绍</a>
+	<a href="nc_hehuoren.html">核伙人项目</a>
+	<a href="nc_lingdongqi.html">下载灵动棋</a>
+</div>
+<!--container-->
+<div class="containerbox">
+	<a class="la"></a>
+    <a class="ra"></a>
+    <div class="container">
+        <div><img src="nanocore_sucai/gsbj/s1.png"></div>
+        <div><img src="nanocore_sucai/gsbj/s2.png"></div>
+        <div><img src="nanocore_sucai/gsbj/s3.png"></div>
+        <div><img src="nanocore_sucai/gsbj/s4.png"></div>
+        <div><img src="nanocore_sucai/gsbj/s5.png"></div>
+        <div class="currentimg"><img src="nanocore_sucai/gsbj/s6.png"></div>
+    </div>
+</div>
+</body>
+</html>
